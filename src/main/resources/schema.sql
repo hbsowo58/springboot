@@ -1,4 +1,4 @@
-CREATE TABLE posts (
+CREATE TABLE IF NOT EXISTS posts (
                        id BIGINT AUTO_INCREMENT PRIMARY KEY COMMENT '게시글 고유 ID',
                        title VARCHAR(255) NOT NULL COMMENT '게시글 제목',
                        content TEXT NOT NULL COMMENT '게시글 내용',
